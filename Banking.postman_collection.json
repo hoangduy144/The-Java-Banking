@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "e33a9e87-b1bb-49a1-bfc9-95368a002316",
+		"name": "Banking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30946150",
+		"_collection_link": "https://dewq55.postman.co/workspace/dewq-Workspace~de6b48c5-f3d6-455b-8a32-bdbc17099519/collection/30946150-e33a9e87-b1bb-49a1-bfc9-95368a002316?action=share&source=collection_link&creator=30946150"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Tran Vu\",\r\n    \"lastName\": \"Huy\",\r\n    \"otherName\": \"\",\r\n    \"gender\": \"Nam\",\r\n    \"address\": \"Quan 5\",\r\n    \"stateOfOrigin\": \"Hanoi\",\r\n    \"accountBalance\": \"2000\",\r\n    \"email\": \"dhhduy2210@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"phoneNumber\": \"0999888777\",\r\n    \"alternativePhoneNumber\": \"0111222333\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"dhhduy22101999@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/credit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Dang Ho Hoang\",\r\n    \"lastName\": \"Duy\",\r\n    \"otherName\": \"Boo\",\r\n    \"gender\": \"Nam\",\r\n    \"address\": \"Quan 10\",\r\n    \"stateOfOrigin\": \"TPHCM\",\r\n    \"accountBalance\": \"2000\",\r\n    \"email\": \"dhhduy2210@gmail.com\",\r\n    \"phoneNumber\": \"0999888777\",\r\n    \"alternativePhoneNumber\": \"0111222333\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user/credit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user",
+								"credit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Dang Ho Hoang\",\r\n    \"lastName\": \"Duy\",\r\n    \"otherName\": \"Boo\",\r\n    \"gender\": \"Nam\",\r\n    \"address\": \"Quan 10\",\r\n    \"stateOfOrigin\": \"TPHCM\",\r\n    \"accountBalance\": \"2000\",\r\n    \"email\": \"dhhduy2210@gmail.com\",\r\n    \"phoneNumber\": \"0999888777\",\r\n    \"alternativePhoneNumber\": \"0111222333\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user/debit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user",
+								"debit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/debit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Dang Ho Hoang\",\r\n    \"lastName\": \"Duy\",\r\n    \"otherName\": \"Boo\",\r\n    \"gender\": \"Nam\",\r\n    \"address\": \"Quan 10\",\r\n    \"stateOfOrigin\": \"TPHCM\",\r\n    \"accountBalance\": \"2000\",\r\n    \"email\": \"dhhduy2210@gmail.com\",\r\n    \"phoneNumber\": \"0999888777\",\r\n    \"alternativePhoneNumber\": \"0111222333\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user/debit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user",
+								"debit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nameEnquiry",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "3b2b2313-64e8-4ce2-9b3d-5d2943bdc773",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"2024208398\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user/nameEnquiry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user",
+								"nameEnquiry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "balanceEnquiry",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGhkdXkyMjEwMTk5OUBnbWFpbC5jb20iLCJpYXQiOjE3MTk4MjIwODIsImV4cCI6MTcxOTkwODQ4Mn0.-OUsZ4l9zSC_AGKxUaJJR_7o3KRpWWXQDXJYhTDEKZ0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"2024191129\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/api/user/balanceEnquiry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"user",
+								"balanceEnquiry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "statement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/bankStatement?accountNumber=2024208398&startDate=2024-06-30&endDate=2024-06-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"bankStatement"
+					],
+					"query": [
+						{
+							"key": "accountNumber",
+							"value": "2024208398"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-06-30"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-06-30"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
